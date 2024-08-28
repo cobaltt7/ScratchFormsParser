@@ -6,7 +6,7 @@ header('Access-Control-Max-Age: 1');
 header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Headers: *");
 
-require_once "/web-dev/mysql.php";
+require_once "../../mysql.php";
 
 $id = (int)(filter_var($_GET["id"], FILTER_VALIDATE_INT));
 if (!$id) {
